@@ -71,7 +71,6 @@ button {
 .employees-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.headings-two {
 
 }
 /* header */
@@ -82,6 +81,7 @@ button {
   display: flex;
   justify-content: space-between;
   height: 80px;
+  border-bottom: 1px solid #ECECEC;
 }
 .nav-links-item + .nav-links-item {
   margin-left: 50px;
@@ -245,7 +245,9 @@ button {
 }
 .social-icons {
   display: flex;
-  justify-content: space-between;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 .social-list-link {
   display: flex;
@@ -275,7 +277,6 @@ button {
 /* Clients */
 .clients-list {
   display: flex;
-  margin-top: 50px;
 }
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
@@ -319,7 +320,6 @@ button {
   font-size: 26px;
   line-height: calc(31 / 26);
   color: #2196f3;
-  margin-bottom: 20px;
 }
 .logo-span-footer {
   color: var(--white-color);
@@ -342,11 +342,11 @@ button {
   color: var(--white-color);
 }
 .footer-icons {
-  justify-content: space-between;
   display: flex;
-  margin-top: 20px;
   width: 206px;
 }
+.footer-icons:not(:last-child) {
+  margin-right: 10px; }
 .social-footer-link {
   display: flex;
   align-items: center;
