@@ -93,6 +93,7 @@ button {
 .contacts-icon {
   margin-right: 10px;
   display: flex;
+  fill: currentColor;
 }
 .contacts-link,
 .nav-links-link {
@@ -134,8 +135,7 @@ button {
 .adress-link,
 .footer-link,
 .contacts-icon {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -149,7 +149,6 @@ button {
 .contacts-icon:hover,
 .contacts-icon:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -234,23 +233,27 @@ button {
 .we-do-images {
   position: relative;
 }
+.what-we-do-overlay {
+}
 .what-we-do-text {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 70px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  text-align: center;
+  padding: 27px 0;
+  background-color: rgba(47, 48, 58, 0.8);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  width: 370px;
-  padding: 27px 32px;
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /* section-employee */
@@ -334,6 +337,7 @@ button {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .clients-list-links:hover,
 .clients-list-links:focus {
   fill: var(--accent-color);
@@ -391,13 +395,12 @@ button {
   border-radius: 50%;
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .social-footer-link:hover,
 .social-footer-link:focus {
   background-color: var(--accent-color);
-  fill: var(--white-color);
 }
 .footer-link {
   margin-top: 20px;
@@ -519,7 +522,8 @@ button {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list-items:hover .portfolio-overlay {
+.portfolio-list-items:hover .portfolio-overlay,
+.portfolio-list-items:focus .portfolio-overlay {
   transform: translateY(0%);
 }
 
@@ -558,7 +562,7 @@ button {
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
   width: 30px;
   height: 30px;
   padding: 6px;
