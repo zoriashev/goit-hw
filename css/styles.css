@@ -372,6 +372,7 @@ button {
   color: var(--white-color);
 }
 .footer-link {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
